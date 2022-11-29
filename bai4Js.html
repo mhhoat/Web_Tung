@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chua{
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.chua img{
+    width: 100%;
+    height: 300px;
+}
+#next, #back{
+    position: absolute;
+    bottom: 44%;
+    color: white;
+    font-size: 30PX;
+    cursor: pointer;
+}
+.chua #next{
+     
+    right: 0;
+}
+
+    </style>
+</head>
+<body onload="onloadImage()">
+    <div class="chua" >
+        <img src="https://source.unsplash.com/random/200x200?sig=1" alt="defaul image" id="img">
+        <div id="next"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg></div>
+      <div id="back"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+      </svg></div>
+    </div>
+    <script>
+      var imgs=[];
+      var dem=0;
+      var image=document.getElementById("img");
+       function onloadImage(){
+        for(var i=0;i<6;i++){
+            imgs[i]= new Image();
+            imgs[i].src="https://source.unsplash.com/random/200x200?sig="+i+"";
+        }
+       }
+       function nextImage(){
+        if(dem<imgs.length-1){
+            dem++;
+           image.src=imgs[dem].src;
+        }
+        else{
+            dem=0;
+        }
+
+       }
+       function backImage(){
+        if(dem<imgs.length-1){
+            dem--;
+           image.src=imgs[dem].src;
+        }
+        else{
+            dem=0;
+        }
+    }
+
+    document.getElementById("next").onclick=function(){
+        nextImage();
+    };
+    document.getElementById("back").onclick=function(){
+        backImage();
+    };
+    </script>
+</body>
+</html>

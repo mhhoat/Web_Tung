@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #212f3f;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.25;
+    background-image: url("https://media.istockphoto.com/photos/cement-shelf-and-floor-on-concrete-background-for-design-picture-id1345203265?b=1&k=20&m=1345203265&s=612x612&w=0&h=u4Vs0oatELuy1jPR8sAVgBeQ6Y-I4x2gjRJCJ6Ra-ZU=");
+    background-size: 120% 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #212f3f;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.section {
+    float: left;
+    width: 100%;
+}
+
+.container {
+    float: none;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.background {
+    background-color: white;
+}
+
+.padding {
+    padding: 20px;
+}
+
+
+/* ** end generral code for every html and css */
+
+.header {
+    margin-top: 50px;
+    height: 350px;
+}
+
+.header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .image {
+    width: 35%;
+}
+
+.header .detail {
+    width: 40%;
+    padding-top: 50px;
+}
+
+.header .detail h1 {
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.header .ortherDetail {
+    width: 40%;
+    display: flex;
+}
+
+.header .ortherDetail>.icon {
+    width: 45px;
+    height: 100%;
+    background-color: #212f3f;
+    margin-right: 20px;
+    padding: 20px 0;
+}
+
+.header .ortherDetail>.icon i {
+    color: white;
+}
+
+.header .ortherDetail>.icon>ul>li {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 27px;
+}
+
+.header .ortherDetail>.ortherDetailContent {
+    padding: 20px 0;
+}
+
+.header .ortherDetail>.ortherDetailContent>ul>li {
+    font-size: 20px;
+    margin-bottom: 29px;
+}
+
+section.study .top {
+    padding-top: 20px;
+}
+
+section.study .top>.title {
+    display: inline;
+    border-bottom: 5px solid #212f3f;
+    font-size: 30px;
+    padding-bottom: 5px;
+    font-weight: 800;
+}
+
+section.study .bottom {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.study .bottom>.left {
+    width: 30%;
+}
+
+section.study .bottom>.left>.time {
+    height: 40px;
+    background-color: #212f3f;
+    padding: 10px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    display: inline;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+section.study .bottom>.right {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.duongKe {
+    margin-right: 40px;
+}
+
+.duongKe>.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #212f3f;
+}
+
+.duongKe>.doc {
+    width: 4px;
+    height: 100%;
+    position: relative;
+    right: -5px;
+    background-color: #212f3f;
+}
+
+section.study .bottom>.right>.NoiHoc>h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+section.study .bottom>.right>.NoiHoc>p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section.study .bottom>.right>.NoiHoc>ul>li {
+    font-size: 20px;
+}

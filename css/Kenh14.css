@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 14px;
+    color: black;
+    background-color: #f0f1f5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.section {
+    width: 100%;
+    float: left;
+}
+
+.container {
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+}
+
+header {
+    height: 25px;
+    background-color: black;
+}
+
+header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container>#headerLeft {
+    width: 25%;
+}
+
+#headerLeft a {
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#headerLeft ul,
+li {
+    display: flex;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+#headerLeft li>img {
+    max-width: 19px;
+    max-height: 25px;
+}
+
+#headerRight input::placeholder {
+    color: gray;
+    background-color: black;
+}
+
+#headerRight input {
+    border: 0.5px solid gray;
+    height: 25px;
+    border-top: none;
+    border-bottom: none;
+    background-color: black;
+}
+
+#headerRight button {
+    color: white;
+    background-color: black;
+    position: relative;
+    left: -30px;
+}
+
+.k14-logo {
+    background: #f0a52b;
+    height: 70px;
+}
+
+.k14-logo>.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#k14-logo-left img {
+    margin-top: 5px;
+}
+
+#k14-logo-right {
+    padding-left: 70px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#k14-logo-right img {
+    max-height: 20px;
+    max-width: 50px;
+    margin-top: 23px;
+}
+
+#k14-logo-right ul>li {
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 100px;
+    float: left;
+    height: 28px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#k14-logo-right ul>li>a {
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.nav-bar {
+    height: 40px;
+    background: #a70e1a;
+    ;
+}
+
+.nav-bar>.container>ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-bar>.container>ul>li {
+    margin-right: 20px;
+    height: 40px;
+}
+
+.nav-bar>.container>ul>li:hover {
+    background-color: gray;
+}
+
+.nav-bar>.container>ul>li>a {
+    color: white;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-cam {
+    background-color: rgba(251, 108, 39, 1);
+    ;
+    color: white;
+    border-radius: 50%;
+}
+
+.btn-cam:hover {
+    background-color: rgb(39, 251, 110);
+    ;
+}
+
+.font-weight-bold {
+    font-weight: 800;
+}

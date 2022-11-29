@@ -1,0 +1,8 @@
+.Parallax-contact{
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    background-image: url("../imgs/bg-pagetitle.jpg");
+
+}

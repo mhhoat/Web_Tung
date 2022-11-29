@@ -1,0 +1,253 @@
+
+.slideshow {
+    position: relative;
+    
+}
+.slideshow .container{
+    background-color: #f6fbff;;
+}
+@media only screen and (min-width:768px) {
+    .carousel-item img{
+        width: 580px;
+        height: 90vh;
+    }
+    .col-md-8> h1{
+        font-size: 60px;
+        font-weight:800;
+        margin-top: 25%;
+    }
+   h1 ~ .escape h1{
+        font-size: 30px;
+        font-weight:800;
+    }
+    .escape>h3{
+        font-size: 25px;
+        
+    }
+    .escape+button{
+        padding: 10px 15px;
+    }
+    .escape+button>a{
+        font-size: 20px;
+    }
+    #carouselExampleIndicators{
+        margin-left: 50px;
+    }
+    .aboutMe img{
+        width: 532px;
+        height: 532px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .carousel-item img{
+        width: 280px;
+        height: 450px;
+    }
+    .escape>h1{
+        font-size: 30px;
+        font-weight:800;
+       
+    }
+    .escape>h3{
+        font-size: 20px;
+    }
+    .escape+button{
+        padding: 7px 10px;
+    }
+    .escape+button>a{
+        font-size: 15px;
+    }
+}  
+.escape {
+    display:block;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  
+  .escape:first-of-type {    /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+    animation: showup 7s infinite;
+  }
+  
+  .escape:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+.escape:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:355px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:355px;}
+  }
+  
+  
+  p {
+    font-size:15px;
+   
+
+  }
+
+
+.aboutMe {
+    margin-top: 50px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+.about-heading{
+    font-family: "Raleway", san-serif;
+    color: #222;
+    font-size: 19px;
+}
+.aboutMe {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.aboutMe img {
+
+    margin: 0 auto;
+}
+
+.thongThao {
+    width: 100%;
+    background-color: #f1f1f1!important;
+    height: 35px;
+}
+
+.mucTtF {
+    width: 60%;
+    background-color: #616161;
+    height: 100%;
+    color: white;
+}
+
+.mucTtB {
+    width: 40%;
+    background-color: #616161;
+    height: 100%;
+    color: white;
+}
+
+.mucTtS {
+    width: 50%;
+    background-color: #616161;
+    height: 100%;
+    color: white;
+}
+
+.numberProject {
+    background-color: #616161;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    height: 133px;
+}
+
+.numberProject .number {
+    margin-top: 30px;
+    text-indent: 20px;
+}
+
+.Parallax-img {
+    min-height: 400px;
+    background-image: url("https://kalvin.netlify.app/images/background/stats-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.Parallax-img{
+    position: relative;
+}
+.Parallax-img div{
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    height: 100%;
+
+}
+.Parallax-img p{
+    text-align: center;
+    top: 40%;
+    left: 45%;
+     color: white;
+     position: absolute;
+     z-index: 1000;
+}
+.imgWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.imgWork img {
+    max-width: 300px;
+    max-height: 225px;
+}
+
+.imgWork-item {
+    width: 300px;
+    height: 225px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.imgWork-item:hover img {
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.Parallax-img2 {
+    min-height: 400px;
+    background-image: url("https://anhdep123.com/wp-content/uploads/2020/04/background-tr%E1%BA%AFng-%C4%91en-1024x768.png");
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 70%;
+}
+
+.ortherDetail li>i::after {
+    content: ":  ";
+    margin-left: 10px;
+}
+
+.submitText {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    float: right;
+}
+
+.submitText:hover {
+    background-color: #ccc;
+    color: black;
+}

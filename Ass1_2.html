@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/Ass1.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0css/font-awesome.min.css">
+  
+</head>
+
+<body>
+   
+    <header class="section mt-5">
+        <div class="container">
+            <h1>
+                Bài 1: Ghi lại các thẻ trên W3SCHOOL: PAGE 2.
+            </h1>
+
+        </div>
+        <hr>
+    </header>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Thuộc tính HTML</h2>
+            <script type="text/javascript">
+                var list = [{
+                    name: 'Thuộc tính href ',
+                    noidung: 'Thẻ <span><</span>a<span>></span>xác định một siêu liên kết. Thuộc href tính chỉ định URL của trang mà liên kết chuyển đến: ',
+                    img: 'a.png'
+                }, {
+                    name: 'Thuộc tính SRC    ',
+                    noidung: 'Thẻ <span><</span>img<span>></span> được sử dụng để nhúng hình ảnh vào trang HTML. Thuộc srctính chỉ định đường dẫn đến hình ảnh sẽ được hiển thị: ',
+                    img: 'src.png'
+                }, {
+                    name: 'Thuộc tính chiểu rộng và chiều cao    ',
+                    noidung: 'Thẻ <span><</span>img<span>></span>cũng phải chứa các thuộc tính widthvà height, chỉ định chiều rộng và chiều cao của hình ảnh (tính bằng pixel): ',
+                    img: 'width_height.png'
+                }, {
+                    name: 'Thuộc tính alt   ',
+                    noidung: 'Thuộc tính bắt buộc alt cho  thẻ  <span><</span>img<span>></span> chỉ định văn bản thay thế cho hình ảnh, nếu hình ảnh vì lý do nào đó không thể hiển thị. Điều này có thể do kết nối chậm hoặc lỗi trong srcthuộc tính hoặc nếu người dùng sử dụng trình đọc màn hình. ',
+                    img: 'anh.png'
+                }, {
+                    name: 'Thuộc tính kiểu  ',
+                    noidung: 'Thuộc tính bắt buộc alt cho  thẻ  <span><</span>img<span>></span> chỉ định văn bản thay thế cho hình ảnh, nếu hình ảnh vì lý do nào đó không thể hiển thị. Điều này có thể do kết nối chậm hoặc lỗi trong srcthuộc tính hoặc nếu người dùng sử dụng trình đọc màn hình. ',
+                    img: 'style.png'
+                }, {
+                    name: ' Thuộc tính lang',
+                    noidung: 'Bạn phải luôn bao gồm langthuộc tính bên trong <span><</span>html<span>></span>thẻ, để khai báo ngôn ngữ của trang Web. Điều này có nghĩa là để hỗ trợ các công cụ tìm kiếm và trình duyệt.',
+
+                    img: 'lang.png'
+                }, {
+                    name: ' Thuộc tính tiêu đề',
+                    noidung: 'Thuộc titletính xác định một số thông tin bổ sung về một phần tử.Giá trị của thuộc tính title sẽ được hiển thị dưới dạng chú giải công cụ khi bạn di chuột qua phần tử:',
+
+                    img: 'title.png'
+                }, {
+                    name: ' Đoạn văn HTML',
+                    noidung: 'Phần tử HTML <span><</span>p<span>></span>xác định một đoạn văn.Một đoạn văn luôn bắt đầu trên một dòng mới và các trình duyệt sẽ tự động thêm một số khoảng trắng (lề) vào trước và sau một đoạn văn.',
+
+                    img: 'anh.png'
+                }, ];
+
+                for (let index = 0; index < list.length; index++) {
+                    const element = list[index];
+                    document.write("<div> <h3 >" + element.name + "</h3><p>" + element.noidung + "</p><div><h4 class='title' style='font-size:12px'>Ví dụ</h4><img src='imgs/" + element.img + "' alt='Ảnh' width='100%'/></div>  </div>");
+
+                }
+            </script>
+        </div>
+    </section>
+    <footer class="section">
+        <div class="container">
+            <ul id="next">
+                <li style="font-weight: 800;font-size:15px">Trang:</li>
+                <li>
+                    <a href="Ass1_1.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+                                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+                              </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="Ass1_2.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle" viewBox="0 0 16 16" style=" background-color: palevioletred;">
+                            <path  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+                          </svg>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </footer>
+ 
+</body>
+
+</html>

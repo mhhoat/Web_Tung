@@ -1,0 +1,40 @@
+.my-like{
+    background-color: #f2f2f2;;
+
+}
+
+.item{
+    width: 25%;
+
+}
+.img-item{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 19px;
+    border: 1px solid grey;
+}
+.img-item i{
+    font-size: 40px;
+}
+.Parallax_about{
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    background-image: url("../imgs/bg1.jpg");
+}
+.about-contact{
+    margin-top: 20px;
+}
+.about-contact i{
+    font-size: 30px;
+    color: black;
+}
+.about-contact ul{
+    margin-top: 10px;
+}
+.about-contact ul li{
+    float: left;
+    margin-right: 20px;
+}

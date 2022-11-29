@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    float: left;
+}
+
+.container {
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.vang {
+    color: rgb(250, 125, 8);
+    margin: 20px 0;
+}
+
+.do {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(202, 9, 9);
+    margin: 20px 0;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Validate font </title>
+</head>
+<style>
+ #form1 .loi {
+    width: 400px;
+    padding: 6px;
+    border: 1px solid red ;
+    background-color: yellow;
+
+ }
+ #form1 {
+    width: 400px;
+    margin: auto;
+    padding: 10px 40px;
+    background: white;
+    border: 1px solid black;
+ }
+ #form1 .txt {
+    width: 400px;
+    padding: 6px;
+    border: solid 1px lightslategray;
+
+ }
+ #form1 fieldset{ border: solid 1px lightslategray;margin-top: 0;}
+ #form1 #dangki {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+ }
+ #form1 #baoloi {
+    margin: 0px auto;
+    color: brown;
+
+ }
+</style>
+<script language="javascript">
+    function kiemtra() {
+        var loi ="";
+        if (loi!=""){
+            document.getElementById ('baoloi').innerHTML=loi;
+            return false;
+        }
+
+   
+    var masv = document.getElementById("masv");
+    if(masv.value==""){
+        masv.className="loi";
+        loi += "ma sinh vien khong duoc bo trong<br>";
+    }
+    else if (masv.value.legth!=7){
+        masv.className="loi";
+        loi += "ma sinh vien khong dung 7 ki tu <br>";
+    }
+    else masv.className="txt"
+    var HOTEN = document.getElementById("HOTEN");
+    if (HOTEN.value==""){
+        HOTEN.className="loi";
+        loi += "ho ten khong duoc bo trong .<br>";
+    }
+    //kiem tra hoten
+    else if (HOTEN.value.length>30){
+        HOTEN.className="loi";
+        loi += "ho ten qua dai.<br>";
+    }
+    else HOTEN.className="txt";
+    //kiem tra email
+   var  Email=document.getElementById("Email");
+   if(Email.value==""){
+    Email.className="loi";
+    loi += "Email khong duoc bo trong.<br>";
+   }
+    else Email.className="txt";
+    //kiem tra phai
+    dem=0;
+    var arr_phai=document.getElementsByName("phai");
+    for (var i=0 ; i<arr_phai.length; i++){
+        if (arr_phai[i].checked==true) dem++;
+    }
+    if (dem==0){
+        document.getElementById("fs1").className="loi";
+        loi += "phai chon gioi tinh.<br>";
+    }
+    else document.getElementById("fs1").className="";
+//kiem tra so thic
+arr_sothich = document.getElementsByName("st");
+dem=0;
+    
+    for (var i=0 ; i<arr_sothich.length; i++){
+        if (arr_phai[i].checked) dem++;
+    }
+    if (dem==0){
+        document.getElementById("fs2").className="loi";
+        loi += "phai chon so thich.<br>";
+    }
+    else document.getElementById("fs2").className="";
+// kiem tra quoc tich
+    var pt = document.getElementById("quoctich");
+    if (pt.value==0){
+        pt.className="loi";
+        loi +="phai chọn quốc tịch.<br>";
+
+    }
+    else pt.className="txt";
+    //kiểm tra ghi chú
+    var gc = document.getElementById("ghichu");
+    if (gc.value.length>200){
+    gc.className="loi";
+    loi += "ghi chú không đc bỏ tróng.<br>";
+    }
+    else gc.className="txt";
+    // xóa lỗi
+    setTimeout("document.getElementsByName('baoloi').innerHTML=''",10000);
+// tra về giá trị 
+     if (loi!=""){
+    document.getElementById('baoloi').innerHTML=loi;
+    return false;
+      }
+ }
+</script>
+<body>
+<form id="form1">
+    <center><h2>Fonr đăng kí</h2></center>
+    <p>
+        <label> mã sinh viên </label><br>
+        <input id = "masv" type="text" class="txt" required>
+    </p>
+    <p>
+        <label>HỌ VÀ TÊN </label><br>
+        <input id = "HOTEN" type="text" class="txt" required>
+    </p>
+    <p>
+       
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <input type="submit">
+       
+    </p>
+    <p>
+        <label>Email </label><br>
+        <input id = "Email" type="email" class="txt">
+    </p>
+    <p>
+        <fieldset id="fs1">
+            <legand>giới tính</legand>
+            <input type="radio" name="phai" value="nam"><label>nam</label>
+            <input type="radio" name="phai" value="nữ"><label>nu</label> <br>
+       </fieldset>
+    </p>
+    <p>
+        <fieldset id="fs1">
+            <legand>sở thích</legand>
+            <br>
+
+            <input type="checkbox" name="st"><label>đọc sách </label>
+            <input type="checkbox" name="st"><label>du lịch </label>
+            <input type="checkbox" name="st"><label>ẩm thực </label>
+            <input type="checkbox" name="st"><label>âm nhạc  </label>
+            <input type="checkbox" name="st"><label>khác </label>
+        </fieldset>
+    </p>
+    <p>
+        <label> Quốc tịch</label>
+        <select id="quoctich" class="txt">
+            <option value="o">chọn quốc tịch</option>
+            <option value="o">việt nam</option>
+            <option value="o">mỹ</option>
+            <option value="o">thai lan </option>
+        </select>
+    </p>
+    <p>
+        <label>ghi chú</label>
+        <textarea id="ghichu" cols="54" rows="5" class="txt"></textarea>
+    </p>
+    <div id="baoloi"></div>
+    <button type="submit" id="dangki">đăng kí </button>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.footer {
+    height: 300px;
+    background-color: #000!important;
+    color: white;
+}
+
+.w3-button {
+    width: 130px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.w3-button:hover {
+    background-color: skyblue;
+}
+
+.footer-xlarge {
+    margin: 20px auto;
+    width: 600px;
+    font-size: 27px;
+    position: relative;
+    left: 225px;
+}
+
+.footer-xlarge p {
+    font-size: 15px;
+}

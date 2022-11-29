@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+.container{
+    margin: 0 auto;
+
+}
+.header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px ;
+    border: 1px solid grey;
+}
+.body1{
+
+    width: 100%;
+   padding: 20px;
+    text-align: center;
+    display: flex; 
+    justify-content: space-between;
+}
+/* .body1::after{  // ap dung cho thuoc tinh float
+    clear: both;
+    content: "";
+    display: block;
+} */
+/* .col{
+float: left;
+height: 550px;
+  width: 30%;
+  padding: 0 6px;
+  margin-right: 20px;
+} */
+.col{
+    height: 550px;
+  width: 30%;
+  padding: 0 6px;
+  margin-right: 20px;
+}
+.footer{
+    
+    text-align: center;
+    background-color: rgb(10, 219, 45);
+    color: rgb(22, 20, 20);
+    width: 100%;
+    height: 50px ;
+    border: 1px solid grey;
+    line-height: 50px;
+}
+@media  (max-width: 600px) {
+    .body1{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+}
